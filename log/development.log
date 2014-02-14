@@ -4,3 +4,30 @@ Started GET "/" for 127.0.0.1 at 2014-02-13 20:06:21 -0500
 Processing by Rails::WelcomeController#index as HTML
   Rendered /Users/tobes/.rvm/gems/ruby-2.1.0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
 Completed 200 OK in 31ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-13 20:13:43 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/tobes/.rvm/gems/ruby-2.1.0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 33ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-13 20:15:59 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/tobes/.rvm/gems/ruby-2.1.0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 32ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2014-02-13 20:16:00 -0500
+Processing by Rails::InfoController#properties as */*
+  Rendered /Users/tobes/.rvm/gems/ruby-2.1.0/gems/railties-4.0.2/lib/rails/templates/rails/info/properties.html.erb (0.7ms)
+Completed 200 OK in 24ms (Views: 15.6ms | ActiveRecord: 1.6ms)
+  [1m[36m (8.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateResumes (20140214025640)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "resumes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "phone" varchar(255), "email" varchar(255), "street" varchar(255), "state" varchar(255), "zip" integer, "summary" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140214025640"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
